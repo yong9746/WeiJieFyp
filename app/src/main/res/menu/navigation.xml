@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_location"
+        android:icon="@drawable/loca"
+        android:title="Location" />
+
+    <item
+        android:id="@+id/nav_houses"
+        android:icon="@drawable/home"
+        android:title="Houses" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/me"
+        android:title="Profile" />
+
+</menu>
