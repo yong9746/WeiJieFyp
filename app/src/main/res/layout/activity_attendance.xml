@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttendanceActivity">
+
+    <include
+        layout="@layout/actionbar"
+        android:id="@+id/actionbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Time"
+        android:gravity="center"
+        android:textColor="#80000000"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_below="@id/actionbar"
+        android:id="@+id/label_time"/>
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="match_parent"
+        android:layout_below="@id/label_time"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:format24Hour="hh:mm:ss a"
+        android:gravity="center_horizontal"
+        android:textColor="#000"
+        android:textSize="44sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/activity_attendance_check_in_button"
+        android:enabled="false"
+        android:text="@string/activity_attendace_button_take_attendance"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_attendance_check_progress_bar"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateTintMode="src_in"
+        android:indeterminateTint="#000000"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

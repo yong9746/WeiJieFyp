@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#80000000"
+    android:padding="20dp"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/custom_linear_layout_with_corner"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:text="@string/ip_adddress_dialog_label"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/ip_address_dialog_ip_address"
+            android:background="@drawable/custom_edit_text_with_border"
+            android:hint="@string/ip_address_dialog_hint_ip_address"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/ip_address_dialog_confirm_button"
+            android:text="@string/ip_adddress_dialog_button_confirm"/>
+    </LinearLayout>
+
+</LinearLayout>

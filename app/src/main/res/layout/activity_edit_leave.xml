@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".leave.leaveList.EditLeaveActivity">
+
+    <include
+        layout="@layout/actionbar"
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="* From Date"
+                    android:textStyle="bold"
+                    android:textColor="@color/transparent_black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:inputType="date"
+                    android:id="@+id/activity_edit_leave_from_date"
+                    android:hint="From Date"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/line_black"
+                    android:layout_height="1dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:textColor="@color/transparent_black"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="* To Date"
+                    android:textStyle="bold"
+                    android:textColor="@color/transparent_black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:padding="10dp"
+                    android:id="@+id/activity_edit_leave_to_date"
+                    android:hint="To Date"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/line_black"
+                    android:layout_height="1dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#80000000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="* Leave Type"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:id="@+id/activity_edit_leave_type"
+            android:padding="10dp"
+            android:layout_height="?actionBarSize"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#80000000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="* Reason"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:minHeight="150dp"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:gravity="start"
+            android:padding="5dp"
+            android:id="@+id/activity_leavel_reason"
+            android:background="@drawable/activity_leave_custom_edit_text"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:id="@+id/activity_apply_edit"
+            android:visibility="gone"
+            android:background="@drawable/activity_login_custom_button"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

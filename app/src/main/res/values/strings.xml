@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HanWei</string>
+    <string name="activity_login_hint_username">Username</string>
+    <string name="activity_login_hint_password">Password</string>
+    <string name="activity_login_login_button">Login</string>
+    <string name="activity_login_ip_address_button">Change IP Address</string>
+    <string name="ip_address_dialog_hint_ip_address">IP Address</string>
+    <string name="ip_adddress_dialog_label">Please enter your IP Address</string>
+    <string name="ip_adddress_dialog_button_confirm">Confirm</string>
+    <string name="activity_attendace_button_take_attendance">Check In</string>
+    <string name="activity_home_label_attendance">Take Attendance</string>
+    <string name="activity_home_hint_attendance">For check in or check out attendance purpose</string>
+    <string name="activity_home_label_history">Attendance History</string>
+    <string name="activity_home_hint_history">Check all of your attendance history</string>
+    <string name="activity_home_label_sign_out">Sign Out</string>
+    <string name="activity_home_hint_sign_up">Log out your id from this app</string>
+</resources>
